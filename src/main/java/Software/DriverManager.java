@@ -30,6 +30,7 @@ public class DriverManager
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
+        System.out.println("setup method pass");
 
     }
     @AfterMethod
