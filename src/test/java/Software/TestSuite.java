@@ -17,15 +17,15 @@ public class TestSuite extends DriverManager
     }
 
 
-    @Test
-    public static void verifySearchBox()
-    {
-       SearchBox searchBox = new SearchBox();
-
-        try {
-            searchBox.searchBoxCheck();
-        } catch (AWTException e) {
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//        public static void verifySearchBox()
+//        {
+//            SearchBox searchBox = new SearchBox();
+//
+//            try {
+//                searchBox.searchBoxCheck();
+//            } catch (AWTException e) {
+//                e.printStackTrace();
+//            }
+//    }
 }
