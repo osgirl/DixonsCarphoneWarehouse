@@ -55,7 +55,7 @@ public class FutureDateSelectCalender
 
             }
 
-            //  System.out.println(dates);
+
         }
         System.out.println("After 7 day date selected");
         Thread.sleep(4000);
