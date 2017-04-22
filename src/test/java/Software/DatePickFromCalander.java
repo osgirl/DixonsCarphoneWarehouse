@@ -22,8 +22,7 @@ public class DatePickFromCalander
 
     @Test
 
-        public void setup ()
-        {
+        public void setup () throws InterruptedException {
             WebDriver driver = new FirefoxDriver();
             driver.manage().window().maximize();
             driver.manage().deleteAllCookies();
@@ -42,30 +41,31 @@ public class DatePickFromCalander
             for (int i = 0; i < total_nods ; i++)
             {
                   String date =  dates.get(i).getText();
-                if (date.equals("5"))
+                System.out.println(date);
+                if (date.equals("22"))
                 {
                     dates.get(i).click();
                     break;
 
                 }
-                System.out.println("onwards date selected");
+              //  System.out.println(dates);
             }
             System.out.println("onwards date selected");
             driver.findElement(By.xpath(".//*[@id='search_btn']")).click();
             System.out.println("pass");
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e)
-            {
-                e.printStackTrace();
-            }
+
+
+            Thread.sleep(3000);
+
             driver.findElement(By.xpath(".//*[@id='buses_viewonward']/div/ul/li[2]/div[1]/div/div[1]/div[7]/div[2]/button")).click();
             driver.findElement(By.xpath(".//*[@id='buses_viewonward']/div/ul/li[2]/div[2]/div[1]/div[1]/div/div/div/div[3]/div/div[3]/canvas")).click();
             driver.findElement(By.xpath(".//*[@id='buses_viewonward']/div/ul/li[2]/div[2]/div[1]/div[2]/div[3]/div[2]/div/div[7]/button")).click();
 
         }
 
-
+  //  now = Calendar.getInstance();
+  //  now.add(Calendar.DATE, +50);
+   // String FromDate =(now.get(Calendar.MONTH) + 1) + "/" + now.get(Calendar.DATE) + "/" + now.get(Calendar.YEAR);
 
 
 

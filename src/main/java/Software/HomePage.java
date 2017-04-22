@@ -18,7 +18,9 @@ public class HomePage extends DriverManager
      @FindBy (xpath = ".//*[@id='headerlinks']/ul/li[1]/a/span")   // storing location and will use in below method
       public WebElement _SelectShopWithUsDropDown;
 
-      @FindBy  (xpath = ".//*[@id='headerlinks']/ul/li[1]/ul/li[1]/a/span")
+
+
+    @FindBy  (xpath = ".//*[@id='headerlinks']/ul/li[1]/ul/li[1]/a/span")
        private WebElement _UKandIreland;
 
       @FindBy (xpath = ".//*[@id='headerlinks']/div/span")
@@ -27,8 +29,8 @@ public class HomePage extends DriverManager
 
 
 
-    public  void homePagePouUp()
-   {
+    public  void homePagePouUp() throws InterruptedException {
+
 
        Utility.clickOnElement(_SelectShopWithUsDropDown);  // select shop with us drop down manu
                                                           // clickOnElmnt method call for Utility class.

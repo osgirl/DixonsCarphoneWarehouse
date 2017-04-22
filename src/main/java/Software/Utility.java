@@ -12,7 +12,7 @@ import static Software.DriverManager.driver;
 /**
  * Created by Mehul on 19/03/2017.
  */
-public class Utility
+public class Utility extends DriverManager
 {
     public static void enterText(WebElement element, String text)
     {

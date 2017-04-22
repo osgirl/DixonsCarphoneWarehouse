@@ -10,8 +10,7 @@ import java.awt.*;
 public class TestSuite extends DriverManager
 {
    @Test
-    public static void homePagePopupHandling ()
-    {
+    public static void homePagePopupHandling () throws InterruptedException {
         HomePage homePage = new HomePage();       // methord called
         homePage.homePagePouUp();
     }
